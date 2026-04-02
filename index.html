@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,20 +11,65 @@
     <h1>FOSS Club</h1>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Events</a>
-      <a href="#">Contact</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- EVENTS SECTION -->
+  <section class="events" id="events">
     <h2>Upcoming Events</h2>
 
+    <div class="cards-container">
 
       <div class="card">
+        <img src="https://logosmarcas.net/wp-content/uploads/2020/12/GitHub-Simbolo.png" alt="GitHub Basics">
         <h3>GIT HUB Basics</h3>
         <p class="date">April 10, 2026</p>
         <p>Learn basics of GIT HUB</p>
-        <button>Register</button>
+        <button onclick="goToRegister()">Register</button>
       </div>
+
+      <div class="card">
+        <img src="https://gracethemes.com/wp-content/uploads/2018/05/How-Web-Development-Framework-Work-for-Business-Progress.png" alt="Web Dev">
+        <h3>Web Development</h3>
+        <p class="date">April 15, 2026</p>
+        <p>Build modern websites</p>
+        <button onclick="goToRegister()">Register</button>
+      </div>
+
+      <div class="card">
+        <img src="https://venturecafephoenix.org/wp-content/uploads/sites/19/2025/02/AI-Workshop-Intentify-1536x864.png" alt="AI Workshop">
+        <h3>AI Workshop</h3>
+        <p class="date">April 20, 2026</p>
+        <p>Introduction to AI</p>
+        <button onclick="goToRegister()">Register</button>
+      </div>
+
+      <div class="card">
+        <img src="https://www.jessevandoren.com/en/content/images/2020/03/Facebook-Hackathon.jpg" alt="Hackathon">
+        <h3>Hackathon</h3>
+        <p class="date">April 25, 2026</p>
+        <p>24-hour coding challenge</p>
+        <button onclick="goToRegister()">Register</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: fossclub@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <!-- JS -->
+  <script>
+    function goToRegister() {
+      window.location.href = "register.html";
+    }
+  </script>
 
 </body>
 </html>
