@@ -18,6 +18,7 @@ Forking creates your own copy of the project in your GitHub account so you can m
 Cloning means downloading the project from GitHub to your computer.
 
 git clone https://github.com/your-username/repository-name.git
+
 cd repository-name
 
 ###  3. Make Changes
@@ -35,6 +36,7 @@ These steps upload your changes back to GitHub.
 
 git add .
 git commit -m "Added new features or fixed bugs"
+
 git push origin main
 
 ###  5. Create a Pull Request
